@@ -9,6 +9,7 @@ const loader = document.getElementById('loader');
 let apiQuotes = [];
 
 function newQuote() {
+
     loading();
     const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
 
@@ -26,7 +27,11 @@ function newQuote() {
 
 
     quoteText.textContent = quote.text;
+    let name = Math.floor(Math.random() * (21 - 1) + 1);
+    document.body.style.backgroundImage =  "url('img/" + name + ".jpg')";
     complete();
+    
+   
 }
 
 function loading() {
@@ -38,6 +43,8 @@ function complete() {
     loader.hidden = true;
     quoteContainer.hidden = false;
 }
+
+    
 
 
 

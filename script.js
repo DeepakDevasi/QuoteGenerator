@@ -28,7 +28,7 @@ function newQuote() {
 
     quoteText.textContent = quote.text;
     let name = Math.floor(Math.random() * (21 - 1) + 1);
-    document.body.style.backgroundImage =  "url('img/" + name + ".jpg')";
+    document.body.style.backgroundImage =  "url(name + '.jpg')";
     complete();
     
    
